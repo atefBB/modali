@@ -1,13 +1,25 @@
+// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module 'react'. Did you mean to set th... Remove this comment to see the full error message
 import React, { useState, useEffect, useRef } from 'react';
+// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module 'react-dom'. Did you mean to se... Remove this comment to see the full error message
 import ReactDOM from 'react-dom';
-import PropTypes from 'prop-types';
+// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module 'classnames'. Did you mean to s... Remove this comment to see the full error message
 import classNames from 'classnames';
+// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module 'shortid'. Did you mean to set ... Remove this comment to see the full error message
 import shortid from 'shortid';
 import './modali.css';
 
-const Button = ({
-  onClick, label, isStyleDefault, isStyleCancel, isStyleDestructive,
-}) => {
+type OwnButtonProps = {
+    onClick: (...args: any[]) => any;
+    label: string;
+    isStyleDefault?: boolean;
+    isStyleCancel?: boolean;
+    isStyleDestructive?: boolean;
+};
+
+// @ts-expect-error ts-migrate(2456) FIXME: Type alias 'ButtonProps' circularly references its... Remove this comment to see the full error message
+type ButtonProps = OwnButtonProps & typeof Button.defaultProps;
+
+const Button = ({ onClick, label, isStyleDefault, isStyleCancel, isStyleDestructive, }: ButtonProps) => {
   const buttonClass = classNames({
     'modali-button': true,
     'modali-button-cancel': isStyleCancel,
@@ -29,14 +41,6 @@ Button.defaultProps = {
   isStyleDefault: false,
   isStyleCancel: false,
   isStyleDestructive: false,
-};
-
-Button.propTypes = {
-  onClick: PropTypes.func.isRequired,
-  label: PropTypes.string.isRequired,
-  isStyleDefault: PropTypes.bool,
-  isStyleCancel: PropTypes.bool,
-  isStyleDestructive: PropTypes.bool,
 };
 
 const Modal = ({
