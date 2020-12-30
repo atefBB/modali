@@ -1,8 +1,11 @@
+// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module 'react'. Did you mean to set th... Remove this comment to see the full error message
 import React from 'react';
+// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module 'react-dom'. Did you mean to se... Remove this comment to see the full error message
 import { render } from 'react-dom';
 
 import Installation from './Installation';
 import BasicExample from './BasicExample';
+// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module '../../src'. Did you mean to se... Remove this comment to see the full error message
 import Modali, { useModali } from '../../src';
 import Button from './Button';
 import MultipleModalsExample from './MultipleModalsExample';

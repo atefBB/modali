@@ -1,3 +1,4 @@
+// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module 'react'. Did you mean to set th... Remove this comment to see the full error message
 import React from 'react';
 import './GithubRibbon.css';
 

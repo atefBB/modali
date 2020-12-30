@@ -1,3 +1,4 @@
+// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module 'react'. Did you mean to set th... Remove this comment to see the full error message
 import React from 'react';
 
 const ButtonStyle = {
@@ -10,7 +11,10 @@ const ButtonStyle = {
   borderBottom: '2px solid rgb(2, 143, 199)',
 };
 
-const Button = ({ handleClick, children }) => (
+const Button = ({
+  handleClick,
+  children
+}: any) => (
   <button type="button" style={ButtonStyle} onClick={handleClick}>
     {children}
   </button>

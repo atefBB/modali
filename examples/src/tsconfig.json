@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "incremental": true,   
+    "target": "es5",    
+    "module": "es2015",
+    "allowJs": true,    
+    "outDir": "./dist/",
+    "jsx": "react",
+    "esModuleInterop": true,    
+    "skipLibCheck": true,     
+    "forceConsistentCasingInFileNames": true 
+  }
+}

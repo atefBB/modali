@@ -1,8 +1,12 @@
+// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module 'react'. Did you mean to set th... Remove this comment to see the full error message
 import React from 'react';
+// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module 'react-syntax-highlighter'. Did... Remove this comment to see the full error message
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module 'react-syntax-highlighter/dist/... Remove this comment to see the full error message
 import { okaidia } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { basicExample } from './snippets/snippets';
 
+// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module '../../src'. Did you mean to se... Remove this comment to see the full error message
 import Modali, { useModali } from '../../src';
 import Button from './Button';
 
