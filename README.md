@@ -9,7 +9,7 @@ A full tutorial on [Modal Components in React Using Custom Hooks](https://upmost
 
 ## Live Demo
 
-https://upmostly.github.io/modali/
+https://atefbb.github.io/modali/
 
 ## Installation
 Install Modali in your project using npm:
